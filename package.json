@@ -1,0 +1,27 @@
+{
+  "name": "better-unit",
+  "version": "0.0.0",
+  "description": "Improved nodeunit",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "test": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clipper-digital/better-unit.git"
+  },
+  "author": "Scott González <scott.gonzalez@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clipper-digital/better-unit/issues"
+  },
+  "homepage": "https://github.com/clipper-digital/better-unit#readme",
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "nodeunit": "^0.10.2"
+  },
+  "devDependencies": {
+    "standard": "^6.0.8"
+  }
+}

@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+
+const betterUnit = require('../index')
+const minimist = require('minimist')
+
+// Parse options
+const options = minimist(process.argv.slice(2), {
+  alias: {
+    recursive: 'r',
+    testspec: 't'
+  }
+})
+const files = options._
+delete options._
+delete options.r
+delete options.t
+
+// Run tests
+betterUnit.run(files, options)
+  .catch((error) => {
+    console.error(error.stack)
+    process.exitCode = 1
+  })

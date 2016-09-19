@@ -15,7 +15,8 @@ better-unit is a wrapper around the [nodeunit](https://www.npmjs.com/package/nod
 ```js
 const betterUnit = require('better-unit')
 
-betterUnit.run(['tests'])
+const options = {}
+betterUnit.run(['tests'], options)
   .catch((error) => {
     console.error(error.stack)
     process.exitCode = 1
